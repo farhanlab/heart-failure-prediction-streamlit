@@ -1,48 +1,57 @@
-Aplikasi web sederhana untuk memprediksi risiko gagal jantung menggunakan algoritma Random Forest. Aplikasi ini menganalisis data medis pasien dan memberikan prediksi risiko.
+Heart Failure Prediction - Random Forest
+Machine learning web app for predicting heart failure risk using Random Forest algorithm.
 
-🎯 Fitur
-Prediksi Real-time: Input data pasien dan dapatkan prediksi risiko gagal jantung secara instan
-Model Machine Learning: Menggunakan algoritma Random Forest yang telah dilatih dengan datasets terkait
-Interface User-Friendly: Antarmuka web yang mudah digunakan dengan Streamlit
-Visualisasi Data: Menampilkan hasil prediksi dengan jelas
+Tech Stack
+• Python 3.8+
+• Streamlit
+• Scikit-learn
+• Pandas
+• Joblib
 
-📋 Parameter Input
-Aplikasi ini menerima berbagai parameter medis pasien:
-Umur (Age): Usia pasien dalam tahun
-Jenis Kelamin (Sex): F (Female) atau M (Male)
-Tipe Nyeri Dada (ChestPainType): TA, ATA, NAP, ASY
-Tekanan Darah Istirahat (RestingBP): Dalam mmHg
-Kolesterol (Cholesterol): Level kolesterol dalam mg/dL
-Gula Darah Puasa (FastingBS): 0 atau 1
-Hasil ECG (RestingECG): Normal, ST, LVH
-Detak Jantung Maksimum (MaxHR): Detak per menit
-Nyeri Dada Saat Olahraga (ExerciseAngina): Y atau N
-Depresi ST (Oldpeak): Nilai numerik
-Kemiringan ST (ST_Slope): Up, Flat, Down
+Features
+• Real-time heart failure risk prediction
+• 11 medical parameters input
+• Random Forest classification model
+• Feature scaling with StandardScaler
 
-🚀 Instalasi
-Clone repository
-bashgit clone <repository-url>
+Installation
+1. Clone repository
+git clone <repository-url>
 cd "Web_Prediksi Gagal Jantung (RandomForest)"
 
-Buat virtual environment
-bashpython -m venv venv
+2. Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate
 
-Aktifkan virtual environment
-venv/Scripts/activate
-
-Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-🎮 Cara Menjalankan
-Pastikan virtual environment sudah aktif
-Jalankan aplikasi dengan perintah:
+4. Usage
 streamlit run app.py
+Access at: http://localhost:8501
 
-Aplikasi akan terbuka di browser pada http://localhost:8501
+Project Structure
+📁 venv/                           # Virtual environment (active)
+📄 app.py                          # Main application
+📄 random_forest_model.joblib      # Trained model
+📄 scaler.joblib                   # Feature scaler
+📄 feature_names.joblib            # Model features
+📄 requirements.txt                # Dependencies
 
-📦 Dependencies
-streamlit: Framework untuk membuat web app
-pandas: Library untuk manipulasi data
-joblib: Untuk loading model machine learning
-Dan library pendukung lainnya (lihat requirements.txt)
+Input Parameters
+Age - Patient age (years)
+Sex - F/M
+ChestPainType - TA/ATA/NAP/ASY
+RestingBP - Blood pressure (mmHg)
+Cholesterol - mg/dL
+FastingBS - 0/1
+RestingECG - Normal/ST/LVH
+MaxHR - Maximum heart rate
+ExerciseAngina - Y/N
+Oldpeak - ST depression
+ST_Slope - Up/Flat/Down
+
+Model Info
+Algorithm: Random Forest Classifier
+Preprocessing: StandardScaler
+Output: Binary classification (Risk/No Risk)
