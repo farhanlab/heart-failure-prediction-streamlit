@@ -50,6 +50,6 @@ Input Parameters
 11. ST_Slope - Up/Flat/Down
 
 Model Info
-Algorithm: Random Forest Classifier
-Preprocessing: StandardScaler
-Output: Binary classification (Risk/No Risk)
+1. Algorithm: Random Forest Classifier
+2. Preprocessing: StandardScaler
+3. Output: Binary classification (Risk/No Risk)
