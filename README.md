@@ -31,6 +31,7 @@ streamlit run app.py
 Access at: http://localhost:8501
 
 Project Structure
+
 <img width="740" height="194" alt="image" src="https://github.com/user-attachments/assets/b4cefc54-84de-4455-892a-f270f2081d84" />
 
 
