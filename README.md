@@ -35,6 +35,7 @@ Project Structure
 <img width="740" height="194" alt="image" src="https://github.com/user-attachments/assets/b4cefc54-84de-4455-892a-f270f2081d84" />
 
 
+
 Input Parameters
 1. Age - Patient age (years)
 2. Sex - F/M
