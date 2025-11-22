@@ -2,17 +2,17 @@ Heart Failure Prediction - Random Forest
 Machine learning web app for predicting heart failure risk using Random Forest algorithm.
 
 Tech Stack
-• Python 3.8+
-• Streamlit
-• Scikit-learn
-• Pandas
-• Joblib
+1. Python 3.8+
+2. Streamlit
+3. Scikit-learn
+4. Pandas
+5. Joblib
 
 Features
-• Real-time heart failure risk prediction
-• 11 medical parameters input
-• Random Forest classification model
-• Feature scaling with StandardScaler
+1. Real-time heart failure risk prediction
+2. 11 medical parameters input
+3. Random Forest classification model
+4. Feature scaling with StandardScaler
 
 Installation
 1. Clone repository
@@ -39,17 +39,17 @@ Project Structure
 📄 requirements.txt                # Dependencies
 
 Input Parameters
-Age - Patient age (years)
-Sex - F/M
-ChestPainType - TA/ATA/NAP/ASY
-RestingBP - Blood pressure (mmHg)
-Cholesterol - mg/dL
-FastingBS - 0/1
-RestingECG - Normal/ST/LVH
-MaxHR - Maximum heart rate
-ExerciseAngina - Y/N
-Oldpeak - ST depression
-ST_Slope - Up/Flat/Down
+1. Age - Patient age (years)
+2. Sex - F/M
+3. ChestPainType - TA/ATA/NAP/ASY
+4. RestingBP - Blood pressure (mmHg)
+5. Cholesterol - mg/dL
+6. FastingBS - 0/1
+7. RestingECG - Normal/ST/LVH
+8. MaxHR - Maximum heart rate
+9. ExerciseAngina - Y/N
+10. Oldpeak - ST depression
+11. ST_Slope - Up/Flat/Down
 
 Model Info
 Algorithm: Random Forest Classifier
