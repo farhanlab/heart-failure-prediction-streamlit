@@ -1,55 +1,72 @@
-Heart Failure Prediction - Random Forest
-Machine learning web app for predicting heart failure risk using Random Forest algorithm.
+# Heart Failure Prediction
+Web app machine learning untuk memprediksi risiko gagal jantung menggunakan algoritma Random Forest, dibangun dengan Streamlit.
 
-Tech Stack
-1. Python 3.8+
-2. Streamlit
-3. Scikit-learn
-4. Pandas
-5. Joblib
+## Tech stack
+- Python 3.8+
+- Streamlit
+- Scikit-learn
+- Pandas
+- Joblib
 
-Features
-1. Real-time heart failure risk prediction
-2. 11 medical parameters input
-3. Random Forest classification model
-4. Feature scaling with StandardScaler
+## Fitur
+- Prediksi risiko gagal jantung secara real-time
+- Input 11 parameter medis
+- Model klasifikasi Random Forest
+- Feature scaling dengan StandardScaler
 
-Installation
-1. Clone repository
-git clone <repository-url>
-cd "Web_Prediksi Gagal Jantung (RandomForest)"
+## Struktur proyek
+```
+venv/                        # Virtual environment (active)
+app.py                       # Aplikasi utama
+random_forest_model.joblib   # Model terlatih
+scaler.joblib                # Feature scaler
+feature_names.joblib         # Nama-nama fitur model
+requirements.txt             # Dependencies
+```
 
-2. Create and activate virtual environment
+## Instalasi
+Clone repo:
+```bash
+git clone <repo-url>
+cd Web_Prediksi_Gagal_Jantung_RandomForest
+```
+
+Buat dan aktifkan virtual environment:
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-3. Install dependencies
+Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-4. Usage
+Jalankan aplikasi:
+```bash
 streamlit run app.py
-Access at: http://localhost:8501
+```
+Aplikasi bisa diakses di [http://localhost:8501](http://localhost:8501)
 
-Project Structure
+## Parameter input
+| No | Parameter | Keterangan |
+|---|---|---|
+| 1 | Age | Usia pasien (tahun) |
+| 2 | Sex | F/M |
+| 3 | ChestPainType | TA/ATA/NAP/ASY |
+| 4 | RestingBP | Tekanan darah saat istirahat (mmHg) |
+| 5 | Cholesterol | mg/dL |
+| 6 | FastingBS | 0/1 |
+| 7 | RestingECG | Normal/ST/LVH |
+| 8 | MaxHR | Detak jantung maksimum |
+| 9 | ExerciseAngina | Y/N |
+| 10 | Oldpeak | ST depression |
+| 11 | ST_Slope | Up/Flat/Down |
 
-<img width="740" height="194" alt="image" src="https://github.com/user-attachments/assets/b4cefc54-84de-4455-892a-f270f2081d84" />
+## Info model
+- Algoritma: Random Forest Classifier
+- Preprocessing: StandardScaler
+- Output: Klasifikasi biner (Risk / No Risk)
 
-
-
-Input Parameters
-1. Age - Patient age (years)
-2. Sex - F/M
-3. ChestPainType - TA/ATA/NAP/ASY
-4. RestingBP - Blood pressure (mmHg)
-5. Cholesterol - mg/dL
-6. FastingBS - 0/1
-7. RestingECG - Normal/ST/LVH
-8. MaxHR - Maximum heart rate
-9. ExerciseAngina - Y/N
-10. Oldpeak - ST depression
-11. ST_Slope - Up/Flat/Down
-
-Model Info
-1. Algorithm: Random Forest Classifier
-2. Preprocessing: StandardScaler
-3. Output: Binary classification (Risk/No Risk)
+## Penulis
+Muhammad Farhan Nurkhaeri
